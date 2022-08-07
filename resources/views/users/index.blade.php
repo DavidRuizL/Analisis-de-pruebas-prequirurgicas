@@ -1,35 +1,38 @@
 @extends('layouts.layout')
 
-@section('title' , 'Medical Devices List')
+@section('title' , 'Examenes Pre-Quirurgicos')
     
 @section('content')
-    <h1>Bienvenido a la lista de DM</h1>
+    <h1>Bienvenido a la lista de usuarios</h1>
     <div class="btn-group">
-        <a href="devices/create" class="btn btn-primary" aria-current="page">CREAR DISPOSITIVO</a>
+        <a href="users/create" class="btn btn-primary" aria-current="page">Nuevo examen</a>
       </div>
       <br><br>
       <table class="table table-dark table-stripe">
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">DISPOSITIVO</th>
-            <th scope="col">MARCA</th>
-            <th scope="col">MODELO</th>
-            <th scope="col"># MTTO / AÑO</th>
-            <th scope="col">ACCIONES</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">APELLIDO</th>
+            <th scope="col">DOCUEMNTO</th>
+            <th scope="col">EDAD</th>
+            <th scope="col">GENERO</th>
+            <th scope="col">EPS</th>
           </tr>
         </thead>
         <tbody>
-            @foreach ($devices as $device)
+            @foreach ($users as $user)
             <tr>
-                <th scope="row">{{$device->id}}</th>
-                <td>{{$device->device}}</td>
-                <td>{{$device->brand}}</td>
-                <td>{{$device->model}}</td>
-                <td>{{$device->mtto}}</td>
+                <th scope="row">{{$user->id}}</th>
+                <td>{{$user->nombre}}</td>
+                <td>{{$user->apellido}}</td>
+                <td>{{$user->documento}}</td>
+                <td>{{$user->edad}}</td>
+                <td>{{$user->genero}}</td>
+                <td>{{$user->eps}}</td>
                 <td>
-                  <form action="{{route('devices.destroy' , $device->id)}}" method="POST">  
-                    <a href="devices/{{$device->id}}/edit" class="btn btn-info"> Editar</a>
+                  <form action="{{route('users.destroy' , $user->id)}}" method="POST">  
+                    <a href="devices/{{$user->id}}/edit" class="btn btn-info"> Editar</a>
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Borrar</button>
