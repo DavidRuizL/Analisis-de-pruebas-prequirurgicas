@@ -13,13 +13,26 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('personal_access_tokens', function (Blueprint $table) {
+        Schema::create('controles', function (Blueprint $table) {
             $table->id();
-            $table->morphs('tokenable');
-            $table->string('name');
-            $table->string('token', 64)->unique();
-            $table->text('abilities')->nullable();
-            $table->timestamp('last_used_at')->nullable();
+            //Nivel 1
+            $table->float('tp1');//Tiampo de Protrombina
+            $table->float('ptt1');//Tiempo de Tromboplastina Parcial
+            $table->float('at1');//Antitrombina III
+            $table->float('tt1');//Tiempo de Trombina
+            $table->float('fb1');//Fibrinógeno)
+            //Nivel 2
+            $table->float('tp2');//Tiampo de Protrombina
+            $table->float('ptt2');//Tiempo de Tromboplastina Parcial
+            $table->float('at2');//Antitrombina III
+            $table->float('tt2');//Tiempo de Trombina
+            $table->float('fb2');//Fibrinógeno)
+            //Nivel 3
+            $table->float('tp3');//Tiampo de Protrombina
+            $table->float('ptt3');//Tiempo de Tromboplastina Parcial
+            $table->float('at3');//Antitrombina III
+            $table->float('tt3');//Tiempo de Trombina
+            $table->float('fb3');//Fibrinógeno)
             $table->timestamps();
         });
     }
@@ -31,6 +44,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('personal_access_tokens');
+        Schema::dropIfExists('controles');
     }
 };

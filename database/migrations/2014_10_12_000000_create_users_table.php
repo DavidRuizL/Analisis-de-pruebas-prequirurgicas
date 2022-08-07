@@ -15,11 +15,17 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('documento')->unique();
+            $table->string('nombre');
+            $table->string('apellido');
+            $table->integer('edad')->unsigned()->nullable();
+            $table->string('eps');
+            $table->string('genero');
+            $table->float('tp');//Tiampo de Protrombina
+            $table->float('ptt');//Tiempo de Tromboplastina Parcial
+            $table->float('at');//Antitrombina III
+            $table->float('tt');//Tiempo de Trombina
+            $table->float('fb');//Fibrinógeno)
             $table->timestamps();
         });
     }
