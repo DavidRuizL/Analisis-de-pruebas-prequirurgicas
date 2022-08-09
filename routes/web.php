@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',  'HomeController@nonExistentMethod');
+Route::get('/',  'App\Http\Controllers\HomeController');
 
 Route::resource('users', 'App\Http\Controllers\UserController');
+//Route::get('users/{user}', 'App\Http\Controllers\UserController' , 'show');
+
 
 
 

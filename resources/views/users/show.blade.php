@@ -21,7 +21,6 @@
           </tr>
         </thead>
         <tbody>
-            @foreach ($users as $user)
             <tr>
                 <th scope="row">{{$user->id}}</th>
                 <td>{{$user->nombre}}</td>
@@ -31,15 +30,14 @@
                 <td>{{$user->genero}}</td>
                 <td>{{$user->eps}}</td>
                 <td>
-                  <form action="{{route('users.show' , $user->id)}}" method="get">  
-                    <a href="users/{{$user->id}}/show" class="btn btn-info"> Editar</a>
+                  <form action="{{route('users.destroy' , $user->id)}}" method="POST">  
+                    <a href="devices/{{$user->id}}/edit" class="btn btn-info"> Editar</a>
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Borrar</button>
                   </form>
                 </td>
             </tr>
-          @endforeach
         </tbody>
       </table>
 @endsection
