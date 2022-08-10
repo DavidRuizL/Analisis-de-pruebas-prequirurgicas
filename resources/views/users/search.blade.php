@@ -9,10 +9,9 @@
               <div class="row">
                     <div class="col-xl-12">
                           <form action="{{ route('users.search') }}" method="get">
-                            @csrf
                                 <div class="form-row">
                                     <div class="col-sm-4 my-1">
-                                          <input  type="text"  class="form-control" name="documento"value="{{ $documento }}">
+                                          <input  type="search"  class="form-control" name="documento" value= "{{ $documento }}" placeholder="Buscar por documento"/>
                                     </div>
                                     <div class="col-auto my-1">
                                           <input type="submit" class="btn btn-primary" value="Buscar">
@@ -38,24 +37,16 @@
           </tr>
         </thead>
         <tbody>
-           @if(count($users)<=0)
-                  <tr>
-                        <td  colspan="7"> No hay resultados </td>
-                  </tr>
-            @else
-            @foreach ($users as $user)
             <tr>
-                <th scope="row">{{$user->id}}</th>
-                <td>{{$user->nombre}}</td>
-                <td>{{$user->apellido}}</td>
-                <td>{{$user->documento}}</td>
-                <td>{{$user->edad}}</td>
-                <td>{{$user->genero}}</td>
-                <td>{{$user->eps}}</td>
+                <th scope="row">{{$user->id ?? 'Null'}}</th>
+                <td>{{$user->nombre ?? 'Null'}}</td>
+                <td>{{$user->apellido ?? 'Null'}}</td>
+                <td>{{$user->documento ?? 'Null'}}</td>
+                <td>{{$user->edad ?? 'Null'}}</td>
+                <td>{{$user->genero ?? 'Null'}}</td>
+                <td>{{$user->eps ?? 'Null'}}</td>
                 </td>
             </tr>
-            @endforeach
-            @endif
         </tbody>
       </table>
 @endsection

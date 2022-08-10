@@ -11,10 +11,9 @@ class UserController extends Controller
     
     public  function  search(Request  $request)
     {
-          $documento=$request->get('documento');
-          $user= \App\Models\User::find($documento);
-          // $user=DB::table('users')->where('documento', $documento);
-          return view('users.search')->with('users', $user->documento);
+          $documento=$request['documento'] ??"" ;
+          $user=DB::table('users')->where('documento', $documento)->first();
+          return view('users.search' ,compact('user', 'documento'));
     }
     /**
      * Display a listing of the resource.
