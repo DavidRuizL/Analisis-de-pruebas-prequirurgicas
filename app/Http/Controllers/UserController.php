@@ -4,9 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Models\User;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
+    
+    public  function  search(Request  $request)
+    {
+          $documento=$request->get('documento');
+          $user= \App\Models\User::find($documento);
+          // $user=DB::table('users')->where('documento', $documento);
+          return view('users.search')->with('users', $user->documento);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -51,6 +60,7 @@ class UserController extends Controller
           return view('users.show')->with('user' , $user);
     }
 
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -84,5 +94,13 @@ class UserController extends Controller
     {
         //
     }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+
 
 }

@@ -4,15 +4,12 @@
     
 @section('content')
     <h1>Bienvenido a la lista de usuarios</h1>
-    <div class="btn-group">
-        <a href="users/create" class="btn btn-primary" aria-current="page">Nuevo examen</a>
-      </div>
       <br><br>
       <table class="table table-dark table-stripe">
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">NOMBRE</th>
+            <th scope="col">NOMBREww</th>
             <th scope="col">APELLIDO</th>
             <th scope="col">DOCUEMNTO</th>
             <th scope="col">EDAD</th>
@@ -29,13 +26,6 @@
                 <td>{{$user->edad}}</td>
                 <td>{{$user->genero}}</td>
                 <td>{{$user->eps}}</td>
-                <td>
-                  <form action="{{route('users.destroy' , $user->id)}}" method="POST">  
-                    <a href="devices/{{$user->id}}/edit" class="btn btn-info"> Editar</a>
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger">Borrar</button>
-                  </form>
                 </td>
             </tr>
         </tbody>

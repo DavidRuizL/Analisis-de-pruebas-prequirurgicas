@@ -32,10 +32,8 @@
                 <td>{{$user->eps}}</td>
                 <td>
                   <form action="{{route('users.show' , $user->id)}}" method="get">  
-                    <a href="users/{{$user->id}}/show" class="btn btn-info"> Editar</a>
                     @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger">Borrar</button>
+                    <button type="submit" class="btn btn-danger">Ver</button>
                   </form>
                 </td>
             </tr>
