@@ -3,7 +3,7 @@
 @section('title' , 'Examenes Pre-Quirurgicos')
     
 @section('content')
-    <h1>Bienvenido a la lista de usuarios</h1>
+    <h1>Ver Usuario</h1>
       <br><br>
       <table class="table table-dark table-stripe">
         <thead>

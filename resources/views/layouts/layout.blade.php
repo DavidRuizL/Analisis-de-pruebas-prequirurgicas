@@ -11,7 +11,7 @@
     <title>@yield('title')</title>
   </head>
   <body>
-    <h1>CRUD DE DISPOSITIVOS MÉDICOS</h1>
+    <h1>Examenes Pre-Quirurgicos</h1>
     @yield('content')
     <!-- Optional JavaScript; choose one of the two! -->
 

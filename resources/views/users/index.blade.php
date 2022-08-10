@@ -4,9 +4,6 @@
     
 @section('content')
     <h1>Bienvenido a la lista de usuarios</h1>
-    <div class="btn-group">
-        <a href="users/create" class="btn btn-primary" aria-current="page">Nuevo examen</a>
-      </div>
       <br><br>
       <table class="table table-dark table-stripe">
         <thead>
@@ -33,7 +30,7 @@
                 <td>
                   <form action="{{route('users.show' , $user->id)}}" method="get">  
                     @csrf
-                    <button type="submit" class="btn btn-danger">Ver</button>
+                    <button type="submit" class="btn btn-primary">Ver</button>
                   </form>
                 </td>
             </tr>
