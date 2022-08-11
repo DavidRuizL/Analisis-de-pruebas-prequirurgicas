@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
  use Illuminate\Database\Console\Seeds\WithoutModelEvents;
- use App\Models\Controles;
+ use App\Models\Control;
 use Illuminate\Database\Seeder;
 
 
@@ -16,7 +16,7 @@ class ControlSedeer extends Seeder
      */
     public function run()
     {
-        $control1 = new Controles;
+        $control1 = new Control;
         //Nivel1
         $control1 ->tp1=10.6;
         $control1 ->ptt1=24.1;

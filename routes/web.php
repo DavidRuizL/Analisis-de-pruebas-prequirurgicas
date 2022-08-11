@@ -16,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',  'App\Http\Controllers\HomeController');
+
 Route::get('users/search', [UserController::class, 'search']) ->name('users.search');
 Route::resource('users', 'App\Http\Controllers\UserController');
 
+Route::resource('controles', 'App\Http\Controllers\ControlController');
 
 
 
