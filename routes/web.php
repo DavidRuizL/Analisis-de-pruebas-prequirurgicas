@@ -19,8 +19,10 @@ Route::get('/',  'App\Http\Controllers\HomeController');
 
 Route::get('users/search', [UserController::class, 'search']) ->name('users.search');
 Route::resource('users', 'App\Http\Controllers\UserController');
+Route::get('users/create', [UserController::class , 'create'])->name('users.create');
 
 Route::resource('controles', 'App\Http\Controllers\ControlController');
+
 
 
 

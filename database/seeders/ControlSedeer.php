@@ -38,7 +38,7 @@ class ControlSedeer extends Seeder
         $control1 ->save();
 
 
-        $control2= New Controles;
+        $control2= New Control;
         //Nivel1
         $control2 ->tp1=15.8;
         $control2 ->ptt1=36.1;

@@ -4,6 +4,9 @@
     
 @section('content')
     <h1>Bienvenido a la lista de usuarios</h1>
+    <div class=btn-group">
+        <a href="users/create" class="btn btn-dark">Crear nuevo usuario</a>
+      </div>
       <br><br>
       <table class="table table-dark table-stripe">
         <thead>

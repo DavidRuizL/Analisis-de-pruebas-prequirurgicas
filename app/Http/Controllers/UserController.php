@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Models\User;
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
@@ -33,7 +33,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('users.create');
     }
 
     /**
@@ -44,7 +44,21 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = new User();
+        $user->documento =$request->get('documento');
+        $user->nombre =$request->get('nombre');
+        $user->apellido =$request->get('apellido');
+        $user->eps =$request->get('eps');
+        $user->genero =$request->get('genero');
+        $user->edad =$request->get('edad');
+        $user->tp =$request->get('tp');
+        $user->ptt =$request->get('ptt');
+        $user->at =$request->get('at');
+        $user->tt =$request->get('tt');
+        $user->fb =$request->get('fb');
+        
+        $user->save();
+        return redirect('/users');
     }
 
     /**
