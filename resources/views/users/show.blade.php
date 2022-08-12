@@ -8,8 +8,7 @@
       <table class="table table-light table-stripe">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">NOMBREww</th>
+            <th scope="col">NOMBRE</th>
             <th scope="col">APELLIDO</th>
             <th scope="col">DOCUEMNTO</th>
             <th scope="col">EDAD</th>
@@ -19,7 +18,6 @@
         </thead>
         <tbody>
             <tr>
-                <th scope="row">{{$user->id}}</th>
                 <td>{{$user->nombre}}</td>
                 <td>{{$user->apellido}}</td>
                 <td>{{$user->documento}}</td>
