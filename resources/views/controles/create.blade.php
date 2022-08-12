@@ -71,5 +71,9 @@
         <a href="/controles" class="btn bnt-secondary" tabindex="5">Cancelar</a>
         <button type="submit" class= "btn bnt-primary" tabindex="6">Guardar</button>
     </form>
+<<<<<<< HEAD
 </div>
 @endsection
+=======
+@endsection
+>>>>>>> 177c799d066d712046b68f5fba74f7529d02d06e
