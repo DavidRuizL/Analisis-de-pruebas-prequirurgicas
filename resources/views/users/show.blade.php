@@ -28,6 +28,9 @@
             </tr>
         </tbody>
       </table>
+      <form action="{{route('users.index')}}" method="get">
+        <button type="submit" class="btn btn-primary">Atrás</button>
+      </form>
 @endsection
 
 @section('footer')

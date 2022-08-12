@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title' , 'Ingresar nuevo ususario')
+@section('title' , 'Ingresar nuevo control')
 
 @section('content')
     <form action="{{route('controles.index')}}" method="post">
@@ -11,7 +11,7 @@
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Nivel 1 PTT: </label>
-            <input type="text" id="ptt" name="ptt" class="form-control" tabindex="3">
+            <input type="text" id="ptt1" name="ptt1" class="form-control" tabindex="3">
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Nivel 1 AT: </label>
