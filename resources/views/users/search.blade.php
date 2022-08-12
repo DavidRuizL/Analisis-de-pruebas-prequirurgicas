@@ -38,7 +38,7 @@
         </thead>
         <tbody>
             <tr>
-                <th scope="row">{{$user->id ?? 'Null'}}</th>
+                <th scope="row">{{$user->id ?? ''}}</th>
                 <td>{{$user->nombre ?? 'Null'}}</td>
                 <td>{{$user->apellido ?? 'Null'}}</td>
                 <td>{{$user->documento ?? 'Null'}}</td>

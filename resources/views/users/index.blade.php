@@ -15,8 +15,6 @@
             <th scope="col">NOMBRE</th>
             <th scope="col">APELLIDO</th>
             <th scope="col">DOCUEMNTO</th>
-            <th scope="col">EDAD</th>
-            <th scope="col">GENERO</th>
             <th scope="col">EPS</th>
           </tr>
         </thead>
@@ -27,8 +25,6 @@
                 <td>{{$user->nombre}}</td>
                 <td>{{$user->apellido}}</td>
                 <td>{{$user->documento}}</td>
-                <td>{{$user->edad}}</td>
-                <td>{{$user->genero}}</td>
                 <td>{{$user->eps}}</td>
                 <td>
                   <form action="{{route('users.show' , $user->id)}}" method="get">  
