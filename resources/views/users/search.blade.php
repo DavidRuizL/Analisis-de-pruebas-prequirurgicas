@@ -24,13 +24,13 @@
               </div>
       </div>
     </body>
-         <table class="table table-dark table-stripe">
+         <table class="table table-light table-stripe">
         <thead>
           <tr>
             <th scope="col">#</th>
             <th scope="col">NOMBRE</th>
             <th scope="col">APELLIDO</th>
-            <th scope="col">DOCUEMNTO</th>
+            <th scope="col">DOCUMENTO</th>
             <th scope="col">EDAD</th>
             <th scope="col">GENERO</th>
             <th scope="col">EPS</th>

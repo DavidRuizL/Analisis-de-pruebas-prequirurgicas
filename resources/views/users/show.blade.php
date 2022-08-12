@@ -5,7 +5,7 @@
 @section('content')
     <h1>Ver Usuario</h1>
       <br><br>
-      <table class="table table-dark table-stripe">
+      <table class="table table-light table-stripe">
         <thead>
           <tr>
             <th scope="col">#</th>
