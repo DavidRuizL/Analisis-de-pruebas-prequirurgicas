@@ -47,7 +47,7 @@
         </div>
         <div class="mb-3">
             <label for="" class="form-label">FB: </label>
-            <input type="text" id="fb" name="fb" class="form-control" tabindex="4">
+            <input type="text" id="fb" name="fb" class="form-control" tabindex="12">
         </div>
         <a href="/users" class="btn bnt-secondary" tabindex="5">Cancelar</a>
         <button type="submit" class= "btn bnt-primary" tabindex="6">Guardar</button>

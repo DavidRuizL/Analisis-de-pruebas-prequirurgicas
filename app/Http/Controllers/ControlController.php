@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Models\Control;
+use App\Models\Control;
 
 class ControlController extends Controller
 {
@@ -55,7 +55,7 @@ class ControlController extends Controller
         $control->tt3 =$request->get('tt3');
         $control->fb3 =$request->get('fb3');
         
-        $user->save();
+        $control->save();
         return redirect('/controles');
     }
 
