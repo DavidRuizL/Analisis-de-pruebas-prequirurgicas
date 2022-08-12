@@ -26,6 +26,7 @@
             <th scope="col">N_3 Antitrombina III</th>
             <th scope="col">N_3 Tiempo de Trombina</th>
             <th scope="col">N_3 Fibrinógeno</th>
+            <th scope="col">Fecha-Hora</th>
           </tr>
         </thead>
         <tbody>
@@ -49,6 +50,7 @@
                 <td>{{$control->at3}}</td>
                 <td>{{$control->tt3}}</td>
                 <td>{{$control->fb3}}</td>
+                <td>{{$control->created_at }}</td>
             </tr>
           @endforeach
         </tbody>
