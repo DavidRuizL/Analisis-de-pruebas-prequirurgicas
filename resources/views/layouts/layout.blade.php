@@ -28,7 +28,7 @@
     <div class="bg-light">
       <nav class="navbar navbar-dark bg-primary">
               <div class="container-fluid">
-                  <a href="#" class="navbar-brand">MENÚ</a>
+                  <a href="/home" class="navbar-brand">MENÚ</a>
                   <button type="button"
                       class="navbar-toggler"
                       data-bs-toggle="collapse"
@@ -110,7 +110,7 @@
   
   
 
-
+@section('footer')
   <footer class="main-footer" style="margin-bottom: 0px !important; position: relative; position:fixed;
   left:0px;
   bottom:0px;">
@@ -119,3 +119,4 @@
     </div>
     <strong>Contactenos:  </strong> 99999999.
   </footer>
+@endsection
