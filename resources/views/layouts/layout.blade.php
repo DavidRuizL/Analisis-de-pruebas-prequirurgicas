@@ -26,7 +26,7 @@
     
         <div id="MenuNavegacion" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-3">
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                           <a class="nav-link active" href="#">Ingreso de paciente</a>
                       </li>
             <li class="nav-item">
@@ -34,16 +34,38 @@
                           <a class="nav-link active" href="{{route('users.index')}}">Consulta masiva</a>
                       </li>
             <li class="nav-item">
-              <form action="{{route('users.search')}}" method="get">
                           <a class="nav-link active" href="{{route('users.search')}}">Consulta de paciente</a>
-                      </li>
+                      </li> --}}
+
+                      <li class="nav-item active dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                          USUARIOS
+                        </a>
+                        <ul class="dropdown-menu">
+                          <form action="{{route('users.create')}}" method="get">
+                            <li><a class="dropdown-item" href="{{route('users.create')}}">Ingreso de datos</a></li>
+                          </form>
+                          <form action="{{route('users.index')}}" method="get">
+                            <li><a class="dropdown-item" href="{{route('users.index')}}">Consulta masiva de paciente</a></li>
+                          </form>
+                          <form action="{{route('users.search')}}" method="get">
+                            <li><a class="dropdown-item" href="{{route('users.search')}}">Consulta de paciente</a></li>
+                          </form>
+                        </ul>
+                    </li>
+
+
                       <li class="nav-item active dropdown">
                           <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Control de calidad
+                            CONTROL DE CALIDAD
                           </a>
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Ingreso de datos</a></li>
-                            <li><a class="dropdown-item" href="#">Consulta</a></li>
+                            <form action="{{route('users.search')}}" method="get">
+                              <li><a class="dropdown-item" href="{{route('users.search')}}">Ingreso de datos</a></li>
+                            </form>
+                            <form action="{{route('users.search')}}" method="get">
+                              <li><a class="dropdown-item" href="{{route('users.search')}}">Consulta</a></li>
+                            </form>
                           </ul>
                       </li>
           </ul>
@@ -68,11 +90,11 @@
   
 
 
-  <footer class="main-footer" style="margin-left: 0px !important; position: relative;">
+  <footer class="main-footer" style="margin-bottom: 0px !important; position: relative; position:fixed;
+  left:0px;
+  bottom:0px;">
     <div class="float-right d-none d-xs-block">
       <b>Version</b> 4.0.8
     </div>
-    <strong>Copyright &copy; 2018-2021 </strong> All rights
-    reserved.
+    <strong>Contactenos:  </strong> 99999999.
   </footer>
-</html>

@@ -4,24 +4,20 @@
     
 @section('content')
     <h1>Bienvenido a la lista de usuarios</h1>
-    <div class=btn-group">
-        <a href="users/create" class="btn btn-dark">Crear nuevo usuario</a>
-      </div>
       <br><br>
-      <table class="table table-dark table-stripe">
+      <table class="table table-light table-stripe">
         <thead>
           <tr>
-            <th scope="col">#</th>
             <th scope="col">NOMBRE</th>
             <th scope="col">APELLIDO</th>
-            <th scope="col">DOCUEMNTO</th>
+            <th scope="col">DOCUMENTO</th> 
             <th scope="col">EPS</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
             @foreach ($users as $user)
             <tr>
-                <th scope="row">{{$user->id}}</th>
                 <td>{{$user->nombre}}</td>
                 <td>{{$user->apellido}}</td>
                 <td>{{$user->documento}}</td>
@@ -36,6 +32,7 @@
           @endforeach
         </tbody>
       </table>
+
 @endsection
 
 @section('footer')

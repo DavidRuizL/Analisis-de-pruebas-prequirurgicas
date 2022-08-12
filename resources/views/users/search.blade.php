@@ -24,31 +24,28 @@
               </div>
       </div>
     </body>
-         <table class="table table-dark table-stripe">
+         <table class="table table-light table-stripe">
         <thead>
           <tr>
-            <th scope="col">#</th>
             <th scope="col">NOMBRE</th>
             <th scope="col">APELLIDO</th>
-            <th scope="col">DOCUEMNTO</th>
-            <th scope="col">EDAD</th>
-            <th scope="col">GENERO</th>
+            <th scope="col">DOCUMENTO</th>
             <th scope="col">EPS</th>
           </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="row">{{$user->id ?? ''}}</th>
-                <td>{{$user->nombre ?? 'Null'}}</td>
-                <td>{{$user->apellido ?? 'Null'}}</td>
-                <td>{{$user->documento ?? 'Null'}}</td>
-                <td>{{$user->edad ?? 'Null'}}</td>
-                <td>{{$user->genero ?? 'Null'}}</td>
-                <td>{{$user->eps ?? 'Null'}}</td>
+                <td>{{$user->nombre ?? ''}}</td>
+                <td>{{$user->apellido ?? ''}}</td>
+                <td>{{$user->documento ?? ''}}</td>
+                <td>{{$user->eps ?? ''}}</td>
                 </td>
             </tr>
         </tbody>
       </table>
+      <form action="{{route('users.index')}}" method="get">
+      <button type="submit" class="btn btn-primary">Atrás</button>
+      </form>
 @endsection
 
 @section('footer')
