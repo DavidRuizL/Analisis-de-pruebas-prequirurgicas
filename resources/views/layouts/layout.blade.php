@@ -76,19 +76,19 @@
                   </li>
 
 
-                      <li class="nav-item active dropdown">
-                          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            CONTROL DE CALIDAD
-                          </a>
-                          <ul class="dropdown-menu">
-                            <form action="{{route('users.search')}}" method="get">
-                              <li><a class="dropdown-item" href="{{route('users.search')}}">Ingreso de datos</a></li>
-                            </form>
-                            <form action="{{route('users.search')}}" method="get">
-                              <li><a class="dropdown-item" href="{{route('users.search')}}">Consulta</a></li>
-                            </form>
-                          </ul>
-                      </li>
+                  <li class="nav-item active dropdown">
+                      <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        CONTROL DE CALIDAD
+                      </a>
+                      <ul class="dropdown-menu">
+                        <form action="{{route('controles.create')}}" method="get">
+                          <li><a class="dropdown-item" href="{{route('controles.create')}}">Ingreso de datos</a></li>
+                        </form>
+                        <form action="{{route('controles.index')}}" method="get">
+                          <li><a class="dropdown-item" href="{{route('controles.index')}}">Consulta</a></li>
+                        </form>
+                      </ul>
+                  </li>
           </ul>
         </div>
       </nav>
