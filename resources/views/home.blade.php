@@ -1,1 +1,2 @@
-<h1>Home desde la carpeta view del proyecto1111</h1>
+@extends('layouts.layout')
+<h1> BIENVENIDO AL SISTEMA DE GESTIÓN DE LA INFORMACION DEL LABORATORIO</h1>

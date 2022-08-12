@@ -12,6 +12,47 @@
   </head>
   <body>
     <h1>Examenes Pre-Quirurgicos</h1>
+    <div class="bg-light">
+      <nav class="navbar navbar-dark bg-success">
+              <div class="container-fluid">
+                  <a href="#" class="navbar-brand">MENÚ</a>
+                  <button type="button"
+                      class="navbar-toggler"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#MenuNavegacion">
+                          <span class="navbar-toggler-icon"></span>
+                  </button>
+              </div>
+    
+        <div id="MenuNavegacion" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-3">
+            <li class="nav-item">
+                          <a class="nav-link active" href="#">Ingreso de paciente</a>
+                      </li>
+            <li class="nav-item">
+              <form action="{{route('users.index')}}" method="get">
+                          <a class="nav-link active" href="{{route('users.index')}}">Consulta masiva</a>
+                      </li>
+            <li class="nav-item">
+              <form action="{{route('users.search')}}" method="get">
+                          <a class="nav-link active" href="{{route('users.search')}}">Consulta de paciente</a>
+                      </li>
+                      <li class="nav-item active dropdown">
+                          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Control de calidad
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ingreso de datos</a></li>
+                            <li><a class="dropdown-item" href="#">Consulta</a></li>
+                          </ul>
+                      </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+
     @yield('content')
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -23,6 +64,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-    
-  </body>
+  
+  
+
+
+  <footer class="main-footer" style="margin-left: 0px !important; position: relative;">
+    <div class="float-right d-none d-xs-block">
+      <b>Version</b> 4.0.8
+    </div>
+    <strong>Copyright &copy; 2018-2021 </strong> All rights
+    reserved.
+  </footer>
 </html>
