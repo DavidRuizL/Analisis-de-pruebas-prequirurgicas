@@ -4,6 +4,9 @@
     
 @section('content')
     <h1>Bienvenido al modulo de control</h1>
+    <div class=btn-group">
+        <a href="controles/create" class="btn btn-dark">Crear nuevo control</a>
+      </div>
       <br><br>
       <table class="table table-dark table-stripe">
         <thead>
@@ -51,6 +54,7 @@
                 <td>{{$control->tt3}}</td>
                 <td>{{$control->fb3}}</td>
                 <td>{{$control->created_at }}</td>
+                
             </tr>
           @endforeach
         </tbody>

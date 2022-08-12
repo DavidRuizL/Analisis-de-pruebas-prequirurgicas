@@ -21,7 +21,9 @@ Route::get('users/search', [UserController::class, 'search']) ->name('users.sear
 Route::resource('users', 'App\Http\Controllers\UserController');
 Route::get('users/create', [UserController::class , 'create'])->name('users.create');
 
+Route::get('controles/create', [ControlController::class , 'create'])->name('controlers.create');
 Route::resource('controles', 'App\Http\Controllers\ControlController');
+
 
 
 
