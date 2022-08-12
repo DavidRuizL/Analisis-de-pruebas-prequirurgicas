@@ -11,9 +11,22 @@
     <title>@yield('title')</title>
   </head>
   <body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>@yield('title')</title>
+  </head>
+  <body>
     <h1>Examenes Pre-Quirurgicos</h1>
     <div class="bg-light">
-      <nav class="navbar navbar-dark bg-success">
+      <nav class="navbar navbar-dark bg-primary">
               <div class="container-fluid">
                   <a href="#" class="navbar-brand">MENÚ</a>
                   <button type="button"
@@ -39,7 +52,7 @@
 
                       <li class="nav-item active dropdown">
                         <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                          USUARIOS
+                          EMPLEADOS
                         </a>
                         <ul class="dropdown-menu">
                           <form action="{{route('users.create')}}" method="get">
@@ -48,11 +61,19 @@
                           <form action="{{route('users.index')}}" method="get">
                             <li><a class="dropdown-item" href="{{route('users.index')}}">Consulta masiva de paciente</a></li>
                           </form>
-                          <form action="{{route('users.search')}}" method="get">
-                            <li><a class="dropdown-item" href="{{route('users.search')}}">Consulta de paciente</a></li>
-                          </form>
                         </ul>
                     </li>
+          
+                    <li class="nav-item active dropdown">
+                      <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        USUARIOS
+                      </a>
+                      <ul class="dropdown-menu">
+                        <form action="{{route('users.search')}}" method="get">
+                          <li><a class="dropdown-item" href="{{route('users.search')}}">Consulta</a></li>
+                        </form>
+                      </ul>
+                  </li>
 
 
                       <li class="nav-item active dropdown">
