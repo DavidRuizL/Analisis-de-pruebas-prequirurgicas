@@ -24,9 +24,9 @@
     <title>@yield('title')</title>
   </head>
   <body>
-    <h1>Examenes Pre-Quirurgicos</h1>
+    <h1 style= "text-align:center">Examenes Pre-Quirurgicos</h1>
     <div class="bg-light">
-      <nav class="navbar navbar-dark bg-primary">
+      <nav class="navbar navbar-dark bg-primary" style="background-color: blue" ">
               <div class="container-fluid">
                   <a href="/home" class="navbar-brand">MENÚ</a>
                   <button type="button"
@@ -109,14 +109,12 @@
     -->
   
   
-
-@section('footer')
+  @yield('footer')
   <footer class="main-footer" style="margin-bottom: 0px !important; position: relative; position:fixed;
   left:0px;
   bottom:0px;">
     <div class="float-right d-none d-xs-block">
       <b>Version</b> 4.0.8
     </div>
-    <strong>Contactenos:  </strong> 99999999.
+    <strong>Contactenos:  </strong> 1802381.
   </footer>
-@endsection

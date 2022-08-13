@@ -20,11 +20,23 @@
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Eps: </label>
-            <input type="text" id="eps" name="eps" class="form-control" tabindex="5" placeholder="Ingrese la eps">
+            <!--<input type="text" id="eps" name="eps" class="form-control" tabindex="5" placeholder="Ingrese la eps">-->
+            <select class="form-select" id="eps" name="eps" class="form-control" tabindex="5">
+                <option selected>Seleccionar...</option>
+                <option value="SANITAS">SANITAS</option>
+                <option value="SURA">SURA</option>
+                <option value="NUEVA EPS">NUEVA EPS</option>
+                <option value="OTRA">Otra</option>
+              </select>
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Género: </label>
-            <input type="text" id="genero" name="genero" class="form-control" tabindex="6" placeholder="Ingrese género">
+        <!--<input type="text" id="genero" name="genero" class="form-control" tabindex="6" placeholder="Ingrese género">-->
+            <select class="form-select" id="genero" name="genero" class="form-control" tabindex="6">
+                <option selected>Seleccionar...</option>
+                <option value="MASCULINO">Masculino</option>
+                <option value="FEMENINO">Femenino</option>
+              </select>
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Edad: </label>
