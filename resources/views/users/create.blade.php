@@ -40,7 +40,7 @@
         </div>
         <div class="mb-3">
             <label for="" class="form-label">AT: </label>
-            <input type="text" id="at" name="at" class="form-control" tabindex="10" placeholder="Ingrese Tiempo de Antitrombina">
+            <input type="text" id="at" name="at" class="form-control" tabindex="10" placeholder="Ingrese Antitrombina">
         </div>
         <div class="mb-3">
             <label for="" class="form-label">TT: </label>
@@ -48,7 +48,7 @@
         </div>
         <div class="mb-3">
             <label for="" class="form-label">FB: </label>
-            <input type="text" id="fb" name="fb" class="form-control" tabindex="12" placeholder="Fibrinógeno">
+            <input type="text" id="fb" name="fb" class="form-control" tabindex="12" placeholder="Ingrese Fibrinógeno">
         </div>
         <a href="/users" class="btn bnt-secondary" tabindex="5">Cancelar</a>
         <button type="submit" class= "btn bnt-primary" tabindex="6">Guardar</button>
