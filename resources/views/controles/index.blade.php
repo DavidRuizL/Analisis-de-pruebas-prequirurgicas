@@ -153,6 +153,123 @@
             @endforeach
           </tbody>
         </table>
+         <br><br>
+      <table class="table table-light table-stripe">
+      <thead>
+      <br><br>
+      </div>
+      <div class="container" >
+        <table border="1" class="table table-hover table-ligth  table-bordered">
+          <thead class="table-secondary">
+            <tr>
+              <th rowspan="2">D_Estadisticos</th>
+              <th colspan="5">Nivel 1</th>
+              <th colspan="5">Nivel 2</th>
+              <th colspan="5">Nivel 3</th>
+            </tr>
+            <tr>
+              <th scope="col">TP</th>
+              <th scope="col">PTT</th>
+              <th scope="col">AT_III</th>
+              <th scope="col">TT</th>
+              <th scope="col">Fb</th>
+
+              <th scope="col">TP</th>
+              <th scope="col">PTT</th>
+              <th scope="col">AT_III</th>
+              <th scope="col">TT</th>
+              <th scope="col">Fb</th>
+
+              <th scope="col">TP</th>
+              <th scope="col">PTT</th>
+              <th scope="col">AT_III</th>
+              <th scope="col">TT</th>
+              <th scope="col">Fb</th>
+            </tr>
+        </thead>
+        <tbody>
+              <tr>
+
+  {{-- NIVEL 1 --}}
+
+                    <td>Promedio</td>
+                    <td>{{$data['tp1']}}</td>
+                    <td>{{$data['ptt1']}}</td>
+                    <td>{{$data['at1']}}</td>  
+                    <td>{{$data['tt1']}}</td>
+                    <td>{{$data['fb1']}}</td>
+         
+  {{-- NIVEL 2 --}}
+
+                    <td>{{$data['tp2']}}</td>
+                    <td>{{$data['ptt2']}}</td>
+                    <td>{{$data['at2']}}</td>  
+                    <td>{{$data['tt2']}}</td>
+                    <td>{{$data['fb2']}}</td>          
+                  
+  {{-- NIVEL 3--}}
+
+                    <td>{{$data['tp3']}}</td>
+                    <td>{{$data['ptt3']}}</td>
+                    <td>{{$data['at3']}}</td>  
+                    <td>{{$data['tt3']}}</td>
+                    <td>{{$data['fb3']}}</td>
+              </tr>
+
+              <tr>
+
+
+
+                
+  {{-- NIVEL 1 --}}
+
+                    <td>D_Estandar</td>
+                    <td>{{$data['dtp1']}}</td>
+                    <td>{{$data['dptt1']}}</td>
+                    <td>{{$data['dat1']}}</td>  
+                    <td>{{$data['dtt1']}}</td>
+                    <td>{{$data['dfb1']}}</td>
+         
+  {{-- NIVEL 2 --}}
+
+                    <td>{{$data['dtp2']}}</td>
+                    <td>{{$data['dptt2']}}</td>
+                    <td>{{$data['dat2']}}</td>  
+                    <td>{{$data['dtt2']}}</td>
+                    <td>{{$data['dfb2']}}</td>          
+                  
+  {{-- NIVEL 3--}}
+
+                    <td>{{$data['dtp3']}}</td>
+                    <td>{{$data['dptt3']}}</td>
+                    <td>{{$data['dat3']}}</td>  
+                    <td>{{$data['dtt3']}}</td>
+                    <td>{{$data['dfb3']}}</td>
+              </tr>
+              
+              <tr>
+  {{-- NIVEL 1 --}}
+                    <td>C_variación</td>
+                    <td>{{number_format($data['dtp1']/$data['tp1'], 2)}}</td>
+                    <td>{{number_format($data['dptt1']/$data['ptt1'], 2)}}</td>
+                    <td>{{number_format($data['dat1']/$data['at1'], 2)}}</td>
+                    <td>{{number_format($data['dtt1']/$data['tt1'], 2)}}</td>
+                    <td>{{number_format($data['dfb1']/$data['fb1'], 2)}}</td>
+  {{-- NIVEL 2 --}}
+                    <td>{{number_format($data['dtp2']/$data['tp2'], 2)}}</td>
+                    <td>{{number_format($data['dptt2']/$data['ptt2'], 2)}}</td>
+                    <td>{{number_format($data['dat2']/$data['at2'], 2)}}</td>
+                    <td>{{number_format($data['dtt2']/$data['tt2'], 2)}}</td>
+                    <td>{{number_format($data['dfb2']/$data['fb2'], 2)}}</td>             
+  {{-- NIVEL 3--}}
+                    <td>{{number_format($data['dtp3']/$data['tp3'], 2)}}</td>
+                    <td>{{number_format($data['dptt3']/$data['ptt3'], 2)}}</td>
+                    <td>{{number_format($data['dat3']/$data['at3'], 2)}}</td>
+                    <td>{{number_format($data['dtt3']/$data['tt3'], 2)}}</td>
+                    <td>{{number_format($data['dfb3']/$data['fb3'], 2)}}</td>
+              </tr>
+        </tbody>
+      </table>
     </div>
 @endsection
 
