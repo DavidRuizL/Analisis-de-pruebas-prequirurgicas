@@ -4,11 +4,9 @@
     
 @section('content')
     <style>
-  
       table, th, td {
         padding: 5px;
-        text-align:center;
-              
+        text-align:center;         
       }
       </style>
     <h1>Bienvenido a la lista de usuarios</h1>

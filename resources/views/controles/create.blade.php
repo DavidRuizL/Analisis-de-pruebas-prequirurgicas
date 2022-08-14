@@ -68,8 +68,8 @@
             <label for="" class="form-label">Nivel 3 FB: </label>
             <input type="text" id="fb3" name="fb3" class="form-control" tabindex="16" placeholder="Ingrese nivel 3 de FB">
         </div>
-        <a href="/controles" class="btn bnt-secondary" tabindex="5">Cancelar</a>
-        <button type="submit" class= "btn bnt-primary" tabindex="6">Guardar</button>
+        <a href="/controles" class="btn btn-secondary" tabindex="5">Cancelar</a>
+        <button type="submit" class= "btn btn-primary" tabindex="6">Guardar</button>
     </form>
 </div>
 @endsection

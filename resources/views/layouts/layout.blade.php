@@ -24,11 +24,10 @@
     <title>@yield('title')</title>
   </head>
   <body>
-    <h1 style= "text-align:center">Examenes Pre-Quirurgicos</h1>
     <div class="bg-light">
       <nav class="navbar navbar-dark bg-primary" style="background-color: blue" ">
               <div class="container-fluid">
-                  <a href="/home" class="navbar-brand">MENÚ</a>
+                  <a href="/home" class="navbar-brand">Examenes Pre-Quirurgicos</a>
                   <button type="button"
                       class="navbar-toggler"
                       data-bs-toggle="collapse"

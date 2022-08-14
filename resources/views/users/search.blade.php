@@ -3,6 +3,12 @@
 @section('title' , 'Examenes Pre-Quirurgicos')
     
 @section('content')
+    <style>
+      table, th, td {
+        padding: 5px;
+        text-align:center;         
+      }
+      </style>
 <div class= 'container'>
 <body>
       <div classs="container">
@@ -46,37 +52,40 @@
       </table>
 
       </body>
-         <table class="table table-light table-stripe">
-        <thead>
-          <tr>
-            <th scope="col"></th>
-            <th scope="col">TP</th>
-            <th scope="col">PTT</th>
-            <th scope="col">AT</th>
-            <th scope="col">TT</th>
-            <th scope="col">FB</th>
-          </tr>
-        </thead>
-        <tbody>
+
+      @if($user->id ?? ''!=null)
+          <table class="table table-light table-stripe">
+          <thead>
             <tr>
-                  <td>Resultado</td>  
-                <td>{{$user->tp ?? ''}}</td>
-                <td>{{$user->ptt ?? ''}}</td>
-                <td>{{$user->at ?? ''}}</td>
-                <td>{{$user->tt ?? ''}}</td>
-                <td>{{$user->fb ?? ''}}</td>
-                </td>
+              <th scope="col"></th>
+              <th scope="col">TP</th>
+              <th scope="col">PTT</th>
+              <th scope="col">AT</th>
+              <th scope="col">TT</th>
+              <th scope="col">FB</th>
             </tr>
-            <tr>
-                  <td scope="col">rangos normales</td>     
-                  <td scope="col">11s - 13.5s seg</td>
-                  <td scope="col">25s - 35s</td>
-                  <td scope="col">80% - 120%</td>
-                  <td scope="col">-</td>
-                  <td scope="col">200mg/dL - 400 mg/dL</td>
-          </tr>
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+              <tr>
+                    <td>Resultado</td>  
+                  <td>{{$user->tp ?? ''}}</td>
+                  <td>{{$user->ptt ?? ''}}</td>
+                  <td>{{$user->at ?? ''}}</td>
+                  <td>{{$user->tt ?? ''}}</td>
+                  <td>{{$user->fb ?? ''}}</td>
+                  </td>
+              </tr>
+              <tr>
+                    <td scope="col">rangos normales</td>     
+                    <td scope="col">11s - 13.5s seg</td>
+                    <td scope="col">25s - 35s</td>
+                    <td scope="col">80% - 120%</td>
+                    <td scope="col">-</td>
+                    <td scope="col">200mg/dL - 400 mg/dL</td>
+            </tr>
+          </tbody>
+         </table>
+         @endif
 </div>
 
 @endsection

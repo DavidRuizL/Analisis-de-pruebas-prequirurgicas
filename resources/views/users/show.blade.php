@@ -3,6 +3,12 @@
 @section('title' , 'Examenes Pre-Quirurgicos')
     
 @section('content')
+    <style>
+      table, th, td {
+        padding: 5px;
+        text-align:center;         
+      }
+      </style>
 <div class= 'container'>
     <h1>Ver Usuario</h1>
       <br><br>
@@ -44,7 +50,7 @@
         </thead>
         <tbody>
             <tr>
-                <td>Resultado</td>  
+                <th>Resultado</th>  
                 <td>{{$user->tp ?? ''}}</td>
                 <td>{{$user->ptt ?? ''}}</td>
                 <td>{{$user->at ?? ''}}</td>
@@ -54,7 +60,7 @@
             </tr>
 
             <tr>
-                  <td scope="col">rangos normales</td>     
+                  <th scope="col">Rangos normales</th>     
                   <td scope="col">11s - 13.5s seg</td>
                   <td scope="col">25s - 35s</td>
                   <td scope="col">80% - 120%</td>

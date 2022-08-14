@@ -31,7 +31,7 @@
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Género: </label>
-        <!--<input type="text" id="genero" name="genero" class="form-control" tabindex="6" placeholder="Ingrese género">-->
+
             <select class="form-select" id="genero" name="genero" class="form-control" tabindex="6">
                 <option selected>Seleccionar...</option>
                 <option value="MASCULINO">Masculino</option>
@@ -62,9 +62,10 @@
             <label for="" class="form-label">FB: </label>
             <input type="text" id="fb" name="fb" class="form-control" tabindex="12" placeholder="Ingrese Fibrinógeno">
         </div>
-        <a href="/users" class="btn bnt-secondary" tabindex="5">Cancelar</a>
-        <button type="submit" class= "btn bnt-primary" tabindex="6">Guardar</button>
+        <a href="/users" class="btn btn-secondary" tabindex="5">Cancelar</a>
+        <button type="submit" class= "btn btn-primary" tabindex="6">Guardar</button>
     </form>
+    
 </div>
 @endsection
 

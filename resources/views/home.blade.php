@@ -5,6 +5,8 @@
 class="p-5 text-center bg-image"
 style="
   background-image: url('https://ormasurgery.com/wp-content/uploads/2020/04/analisisc.png');
+  background-repeat: no-repeat;
+  background-position: center;
   height: 700px; weight: 500px;
 "
 > 
