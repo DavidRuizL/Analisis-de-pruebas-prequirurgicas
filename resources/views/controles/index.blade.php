@@ -156,11 +156,11 @@
          <br><br>
       <table class="table table-light table-stripe">
       <div class="container">
-        <h1 align="center">Tabla Estadistica</h1>
+        <h1 align="center">Tabla Estadística</h1>
         <table border="1" class="table table-hover table-ligth  table-bordered">
           <thead class="table-secondary">
             <tr>
-              <th rowspan="2">D_Estadisticos</th>
+              <th rowspan="2">D_Estadísticos</th>
               <th colspan="5">Nivel 1</th>
               <th colspan="5">Nivel 2</th>
               <th colspan="5">Nivel 3</th>

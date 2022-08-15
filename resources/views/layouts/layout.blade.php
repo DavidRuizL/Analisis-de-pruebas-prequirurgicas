@@ -33,7 +33,7 @@
           <h1 align="center" style="color:white" >Módulo de Análisis</h1>
           <nav class="navbar navbar-dark bg-primary" style="background-color: blue" ">
               <div class="container-fluid">
-                  <a href="/home" class="navbar-brand">Examenes Pre-Quirurgicos</a>
+                  <a href="/home" class="navbar-brand">Exámenes Pre-Quirúrgicos</a>
                   <button type="button"
                       class="navbar-toggler"
                       data-bs-toggle="collapse"
@@ -61,7 +61,7 @@
                         </a>
                         <ul class="dropdown-menu">
                           <form action="{{route('users.create')}}" method="get">
-                            <li><a class="dropdown-item" href="{{route('users.create')}}">Ingreso de datos</a></li>
+                            <li><a class="dropdown-item" href="{{route('users.create')}}">Ingreso de Usuarios</a></li>
                           </form>
                           <form action="{{route('users.index')}}" method="get">
                             <li><a class="dropdown-item" href="{{route('users.index')}}">Consulta masiva de paciente</a></li>
@@ -87,7 +87,7 @@
                       </a>
                       <ul class="dropdown-menu">
                         <form action="{{route('controles.create')}}" method="get">
-                          <li><a class="dropdown-item" href="{{route('controles.create')}}">Ingreso de datos</a></li>
+                          <li><a class="dropdown-item" href="{{route('controles.create')}}">Ingreso de Controles</a></li>
                         </form>
                         <form action="{{route('controles.index')}}" method="get">
                           <li><a class="dropdown-item" href="{{route('controles.index')}}">Consulta</a></li>
@@ -133,7 +133,7 @@
     <div class="container-fluid text-center p-0.5">
           <strong>Contactenos:  </strong> 
           +57 1802381
-          <p class="small">&copy; Todos los derechos reservados Bio22</p>
+          <p class="small">Medellín, Colombia</p>
     </div>
     
   </footer>
