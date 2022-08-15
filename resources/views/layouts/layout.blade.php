@@ -111,9 +111,23 @@
   @yield('footer')
   <footer class="main-footer" style="margin-bottom: 0px !important; position: relative; position:fixed;
   left:0px;
-  bottom:0px;">
+  bottom:0px;
+  background: rgb(55, 69, 214);
+  width: 100%;
+  text-align: center
+  text-shadow: 0px 1px rgba( 0, 0, 0, 0.3 );">
+
+
+
+
+
     <div class="float-right d-none d-xs-block">
       <b>Version</b> 4.0.8
     </div>
-    <strong>Contactenos:  </strong> 1802381.
+    <div class="container-fluid text-center p-0.5">
+          <strong>Contactenos:  </strong> 
+          +57 1802381
+          <p class="small">&copy; Todos los derechos reservados Bio22</p>
+    </div>
+    
   </footer>
