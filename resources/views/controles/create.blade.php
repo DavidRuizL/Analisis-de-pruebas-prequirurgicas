@@ -3,6 +3,8 @@
 @section('title' , 'Ingresar nuevo control')
 
 @section('content')
+<br><br>
+<h1 align="center">Nuevo Control</h1>
 <div class='container'>
     <form action="{{route('controles.index')}}" method="post">
         @csrf
@@ -68,8 +70,12 @@
             <label for="" class="form-label">Nivel 3 FB: </label>
             <input type="text" id="fb3" name="fb3" class="form-control" tabindex="16" placeholder="Ingrese nivel 3 de FB">
         </div>
-        <a href="/controles" class="btn btn-secondary" tabindex="5">Cancelar</a>
         <button type="submit" class= "btn btn-primary" tabindex="6">Guardar</button>
+        <a href="/controles" class="btn btn-secondary" tabindex="5">Cancelar</a>
     </form>
+     <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
 </div>
 @endsection

@@ -1,5 +1,4 @@
 @extends('layouts.layout')
-<h1> BIENVENIDO AL SISTEMA DE GESTIÓN DE LA INFORMACION DEL LABORATORIO</h1>
 @section('content')
 <div
 class="p-5 text-center bg-image"

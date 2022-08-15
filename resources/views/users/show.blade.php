@@ -9,9 +9,9 @@
         text-align:center;         
       }
       </style>
-<div class= 'container'>
-    <h1>Ver Usuario</h1>
       <br><br>
+<div class= 'container'>
+    <h1 align="center">Resultados de {{$user->nombre}}</h1>
       <table class="table table-light table-stripe">
         <thead>
           <tr>
@@ -70,14 +70,13 @@
 
         </tbody>
       </table>
-
-      <form action="{{route('users.index')}}" method="get">
-        <button type="submit" class="btn btn-primary">Atrás</button>
-      </form>
-
-</div>
+      <div class="col text-center">
+            <form action="{{route('users.index')}}" method="get">
+              <button type="submit" class="btn btn-primary  col text-center">Atrás</button>
+            </form>
+      </div>
 @endsection
 
 @section('footer')
-    <h3>Ingeniería de Software</h3>
+
 @endsection

@@ -3,7 +3,6 @@
 @section('title' , 'Examenes Pre-Quirurgicos')
     
 @section('content')
-    <h1>Bienvenido al modulo de control</h1>
     <style>
   
       table, th, td {
@@ -14,6 +13,7 @@
       </style>
       <br><br>
       <div class="container" >
+        <h1 align="center">Historial de Calidad</h1>
         <table border="1" class="table table-hover table-ligth  table-bordered">
           <thead class="table-secondary">
             <tr>
@@ -155,10 +155,8 @@
         </table>
          <br><br>
       <table class="table table-light table-stripe">
-      <thead>
-      <br><br>
-      </div>
-      <div class="container" >
+      <div class="container">
+        <h1 align="center">Tabla Estadistica</h1>
         <table border="1" class="table table-hover table-ligth  table-bordered">
           <thead class="table-secondary">
             <tr>
@@ -270,6 +268,8 @@
               </tr>
         </tbody>
       </table>
+      <br><br>
+      <br><br>
     </div>
 @endsection
 

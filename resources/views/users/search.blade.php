@@ -9,28 +9,23 @@
         text-align:center;         
       }
       </style>
-<div class= 'container'>
+
 <body>
-      <div classs="container">
+<div class= 'container'>
+      <div classs="container ">
               <h2>Busqueda de usuarios</h2> 
               <div class="row">
-                    <div class="col-xl-12">
+                    <div class="col-xl-12 col-sm-4 my-1 col-auto my-1">
                           <form action="{{ route('users.search') }}" method="get">
-                                <div class="form-row">
-                                    <div class="col-sm-4 my-1">
-                                          <input  type="search"  class="form-control" name="documento" value= "{{ $documento }}" placeholder="Buscar por documento"/>
-                                    </div>
-                                    <div class="col-auto my-1">
-                                          <input type="submit" class="btn btn-primary" value="Buscar">
-                                    </div>
+                                <div class="btn-group">
+                                          <input  type="search"  class="form-control" name="documento" value= "{{ $documento }}" placeholder="Buscar por documento">
+                                          <button type="submit" class="btn btn-primary" >Buscar</button>
                                 </div>
                           </form>
-                    </div>
-                    <div class="col-xl-12">
-                    </div>
               </div>
       </div>
     </body>
+        <br><br>
          <table class="table table-light table-stripe">
         <thead>
           <tr>
@@ -67,7 +62,7 @@
           </thead>
           <tbody>
               <tr>
-                    <td>Resultado</td>  
+                    <th>Resultado</th>  
                   <td>{{$user->tp ?? ''}}</td>
                   <td>{{$user->ptt ?? ''}}</td>
                   <td>{{$user->at ?? ''}}</td>
@@ -76,7 +71,7 @@
                   </td>
               </tr>
               <tr>
-                    <td scope="col">rangos normales</td>     
+                    <th scope="col">Rangos normales</th>     
                     <td scope="col">11s - 13.5s seg</td>
                     <td scope="col">25s - 35s</td>
                     <td scope="col">80% - 120%</td>
@@ -91,5 +86,5 @@
 @endsection
 
 @section('footer')
-    <h3>Ingeniería de Software</h3>
+
 @endsection

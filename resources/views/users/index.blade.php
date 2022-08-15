@@ -9,8 +9,8 @@
         text-align:center;         
       }
       </style>
-    <h1>Bienvenido a la lista de usuarios</h1>
       <br><br>
+    <h1 align="center">Lista de Usuarios</h1>
       <div class="container">
         <table  border ="1"  class="table table-light table-stripe table-hover ">
           <thead class="table-secondary">
@@ -45,5 +45,5 @@
 @endsection
 
 @section('footer')
-    <h3>Ingeniería de Software</h3>
+
 @endsection

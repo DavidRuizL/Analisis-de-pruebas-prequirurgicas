@@ -3,6 +3,8 @@
 @section('title' , 'Ingresar nuevo ususario')
 
 @section('content')
+<br><br>
+<h1 align="center">Nuevo Usuario</h1>
 <div class='container'>
     <form action="/users" method="post">
         @csrf
@@ -62,9 +64,13 @@
             <label for="" class="form-label">FB: </label>
             <input type="text" id="fb" name="fb" class="form-control" tabindex="12" placeholder="Ingrese Fibrinógeno">
         </div>
-        <a href="/users" class="btn btn-secondary" tabindex="5">Cancelar</a>
         <button type="submit" class= "btn btn-primary" tabindex="6">Guardar</button>
+        <a href="/users" class="btn btn-secondary" tabindex="5">Cancelar</a>
     </form>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
     
 </div>
 @endsection

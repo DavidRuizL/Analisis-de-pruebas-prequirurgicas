@@ -7,9 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>@yield('title')</title>
-  </head>
+      <title>@yield('title')</title>
+    </head>
   <body>
 <!doctype html>
 <html lang="en">
@@ -20,12 +19,19 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <title>@yield('title')</title>
   </head>
   <body>
-    <div class="bg-light">
-      <nav class="navbar navbar-dark bg-primary" style="background-color: blue" ">
+    <div class="bg-primary">
+      {{-- <figure style= "width:150px;
+          height:150px;
+          background-color: blue;
+          background: url(logo.png);
+          float:left;
+          margin-top:60px;
+          margin-left:20px;"> </figure> --}}
+          <h1 align="center" style="color:white" >Módulo de Análisis</h1>
+          <nav class="navbar navbar-dark bg-primary" style="background-color: blue" ">
               <div class="container-fluid">
                   <a href="/home" class="navbar-brand">Examenes Pre-Quirurgicos</a>
                   <button type="button"
